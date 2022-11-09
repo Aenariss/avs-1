@@ -1,0 +1,145 @@
+-- The C compiler identification is Intel 2021.6.0.20220226
+-- The CXX compiler identification is Intel 2021.6.0.20220226
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /apps/all/intel-compilers/2022.1.0/compiler/2022.1.0/linux/bin/intel64/icc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /apps/all/intel-compilers/2022.1.0/compiler/2022.1.0/linux/bin/intel64/icpc - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ZLIB: /apps/all/zlib/1.2.12-GCCcore-11.3.0/lib/libz.so (found version "1.2.12") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/xfiala61/avs/build_evaluate
+/apps/all/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -S/home/xfiala61/avs -B/home/xfiala61/avs/build_evaluate --check-build-system CMakeFiles/Makefile.cmake 0
+/apps/all/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_progress_start /home/xfiala61/avs/build_evaluate/CMakeFiles /home/xfiala61/avs/build_evaluate//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/xfiala61/avs/build_evaluate'
+make  -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/depend
+make[2]: Entering directory '/home/xfiala61/avs/build_evaluate'
+cd /home/xfiala61/avs/build_evaluate && /apps/all/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_depends "Unix Makefiles" /home/xfiala61/avs /home/xfiala61/avs /home/xfiala61/avs/build_evaluate /home/xfiala61/avs/build_evaluate /home/xfiala61/avs/build_evaluate/CMakeFiles/mandelbrot.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/xfiala61/avs/build_evaluate'
+make  -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/build
+make[2]: Entering directory '/home/xfiala61/avs/build_evaluate'
+[ 14%] Building CXX object CMakeFiles/mandelbrot.dir/calculators/BaseMandelCalculator.cc.o
+/apps/all/intel-compilers/2022.1.0/compiler/2022.1.0/linux/bin/intel64/icpc  -I/apps/all/zlib/1.2.12-GCCcore-11.3.0/include -I/home/xfiala61/avs/common -I/home/xfiala61/avs/calculators -O3 -mavx2 -xHost -qopt-zmm-usage=high -g -qopenmp-simd -qopt-report=1 -qopt-report-phase=vec -std=gnu++11 -MD -MT CMakeFiles/mandelbrot.dir/calculators/BaseMandelCalculator.cc.o -MF CMakeFiles/mandelbrot.dir/calculators/BaseMandelCalculator.cc.o.d -o CMakeFiles/mandelbrot.dir/calculators/BaseMandelCalculator.cc.o -c /home/xfiala61/avs/calculators/BaseMandelCalculator.cc
+[ 28%] Building CXX object CMakeFiles/mandelbrot.dir/calculators/BatchMandelCalculator.cc.o
+/apps/all/intel-compilers/2022.1.0/compiler/2022.1.0/linux/bin/intel64/icpc  -I/apps/all/zlib/1.2.12-GCCcore-11.3.0/include -I/home/xfiala61/avs/common -I/home/xfiala61/avs/calculators -O3 -mavx2 -xHost -qopt-zmm-usage=high -g -qopenmp-simd -qopt-report=1 -qopt-report-phase=vec -std=gnu++11 -MD -MT CMakeFiles/mandelbrot.dir/calculators/BatchMandelCalculator.cc.o -MF CMakeFiles/mandelbrot.dir/calculators/BatchMandelCalculator.cc.o.d -o CMakeFiles/mandelbrot.dir/calculators/BatchMandelCalculator.cc.o -c /home/xfiala61/avs/calculators/BatchMandelCalculator.cc
+[ 42%] Building CXX object CMakeFiles/mandelbrot.dir/calculators/LineMandelCalculator.cc.o
+/apps/all/intel-compilers/2022.1.0/compiler/2022.1.0/linux/bin/intel64/icpc  -I/apps/all/zlib/1.2.12-GCCcore-11.3.0/include -I/home/xfiala61/avs/common -I/home/xfiala61/avs/calculators -O3 -mavx2 -xHost -qopt-zmm-usage=high -g -qopenmp-simd -qopt-report=1 -qopt-report-phase=vec -std=gnu++11 -MD -MT CMakeFiles/mandelbrot.dir/calculators/LineMandelCalculator.cc.o -MF CMakeFiles/mandelbrot.dir/calculators/LineMandelCalculator.cc.o.d -o CMakeFiles/mandelbrot.dir/calculators/LineMandelCalculator.cc.o -c /home/xfiala61/avs/calculators/LineMandelCalculator.cc
+[ 57%] Building CXX object CMakeFiles/mandelbrot.dir/calculators/RefMandelCalculator.cc.o
+/apps/all/intel-compilers/2022.1.0/compiler/2022.1.0/linux/bin/intel64/icpc  -I/apps/all/zlib/1.2.12-GCCcore-11.3.0/include -I/home/xfiala61/avs/common -I/home/xfiala61/avs/calculators -O3 -mavx2 -xHost -qopt-zmm-usage=high -g -qopenmp-simd -qopt-report=1 -qopt-report-phase=vec -std=gnu++11 -MD -MT CMakeFiles/mandelbrot.dir/calculators/RefMandelCalculator.cc.o -MF CMakeFiles/mandelbrot.dir/calculators/RefMandelCalculator.cc.o.d -o CMakeFiles/mandelbrot.dir/calculators/RefMandelCalculator.cc.o -c /home/xfiala61/avs/calculators/RefMandelCalculator.cc
+[ 71%] Building CXX object CMakeFiles/mandelbrot.dir/common/cnpy.cc.o
+/apps/all/intel-compilers/2022.1.0/compiler/2022.1.0/linux/bin/intel64/icpc  -I/apps/all/zlib/1.2.12-GCCcore-11.3.0/include -I/home/xfiala61/avs/common -I/home/xfiala61/avs/calculators -O3 -mavx2 -xHost -qopt-zmm-usage=high -g -qopenmp-simd -qopt-report=1 -qopt-report-phase=vec -std=gnu++11 -MD -MT CMakeFiles/mandelbrot.dir/common/cnpy.cc.o -MF CMakeFiles/mandelbrot.dir/common/cnpy.cc.o.d -o CMakeFiles/mandelbrot.dir/common/cnpy.cc.o -c /home/xfiala61/avs/common/cnpy.cc
+[ 85%] Building CXX object CMakeFiles/mandelbrot.dir/main.cc.o
+/apps/all/intel-compilers/2022.1.0/compiler/2022.1.0/linux/bin/intel64/icpc  -I/apps/all/zlib/1.2.12-GCCcore-11.3.0/include -I/home/xfiala61/avs/common -I/home/xfiala61/avs/calculators -O3 -mavx2 -xHost -qopt-zmm-usage=high -g -qopenmp-simd -qopt-report=1 -qopt-report-phase=vec -std=gnu++11 -MD -MT CMakeFiles/mandelbrot.dir/main.cc.o -MF CMakeFiles/mandelbrot.dir/main.cc.o.d -o CMakeFiles/mandelbrot.dir/main.cc.o -c /home/xfiala61/avs/main.cc
+[100%] Linking CXX executable mandelbrot
+/apps/all/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_link_script CMakeFiles/mandelbrot.dir/link.txt --verbose=1
+/apps/all/intel-compilers/2022.1.0/compiler/2022.1.0/linux/bin/intel64/icpc -O3 -mavx2 -xHost -qopt-zmm-usage=high -g -qopenmp-simd -qopt-report=1 -qopt-report-phase=vec CMakeFiles/mandelbrot.dir/calculators/BaseMandelCalculator.cc.o CMakeFiles/mandelbrot.dir/calculators/BatchMandelCalculator.cc.o CMakeFiles/mandelbrot.dir/calculators/LineMandelCalculator.cc.o CMakeFiles/mandelbrot.dir/calculators/RefMandelCalculator.cc.o CMakeFiles/mandelbrot.dir/common/cnpy.cc.o CMakeFiles/mandelbrot.dir/main.cc.o -o mandelbrot  /apps/all/zlib/1.2.12-GCCcore-11.3.0/lib/libz.so 
+make[2]: Leaving directory '/home/xfiala61/avs/build_evaluate'
+[100%] Built target mandelbrot
+make[1]: Leaving directory '/home/xfiala61/avs/build_evaluate'
+/apps/all/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_progress_start /home/xfiala61/avs/build_evaluate/CMakeFiles 0
+2529490
+pids 2529490
+2529491
+pids 2529490 2529491
+2529493
+pids 2529490 2529491 2529493
+2529497
+pids 2529490 2529491 2529493 2529497
+2529498
+pids 2529490 2529491 2529493 2529497 2529498
+2529500
+pids 2529490 2529491 2529493 2529497 2529498 2529500
+2529504
+pids 2529490 2529491 2529493 2529497 2529498 2529500 2529504
+2529505
+pids 2529490 2529491 2529493 2529497 2529498 2529500 2529504 2529505
+2529507
+pids 2529490 2529491 2529493 2529497 2529498 2529500 2529504 2529505 2529507
+wait for 2529490
+wait for 2529491
+wait for 2529493
+wait for 2529497
+wait for 2529498
+wait for 2529500
+wait for 2529504
+wait for 2529505
+wait for 2529507
+CALCULATOR;BASE;WIDTH;HEIGHT;ITERS;TIME
+RefMandelCalculator;512;1536;1024;100;119
+RefMandelCalculator;512;1536;1024;100;119
+RefMandelCalculator;512;1536;1024;100;119
+LineMandelCalculator;512;1536;1024;100;13
+LineMandelCalculator;512;1536;1024;100;13
+LineMandelCalculator;512;1536;1024;100;13
+RefMandelCalculator;1024;3072;2048;100;476
+RefMandelCalculator;1024;3072;2048;100;477
+RefMandelCalculator;1024;3072;2048;100;477
+BatchMandelCalculator;512;1536;1024;100;16
+LineMandelCalculator;1024;3072;2048;100;77
+BatchMandelCalculator;512;1536;1024;100;16
+LineMandelCalculator;1024;3072;2048;100;76
+BatchMandelCalculator;512;1536;1024;100;16
+LineMandelCalculator;1024;3072;2048;100;85
+RefMandelCalculator;2048;6144;4096;100;1898
+RefMandelCalculator;2048;6144;4096;100;1899
+RefMandelCalculator;2048;6144;4096;100;1899
+BatchMandelCalculator;1024;3072;2048;100;64
+LineMandelCalculator;2048;6144;4096;100;363
+BatchMandelCalculator;1024;3072;2048;100;64
+LineMandelCalculator;2048;6144;4096;100;362
+BatchMandelCalculator;1024;3072;2048;100;64
+RefMandelCalculator;4096;12288;8192;100;7564
+LineMandelCalculator;2048;6144;4096;100;362
+RefMandelCalculator;4096;12288;8192;100;7570
+RefMandelCalculator;4096;12288;8192;100;7565
+BatchMandelCalculator;2048;6144;4096;100;255
+LineMandelCalculator;4096;12288;8192;100;1436
+BatchMandelCalculator;2048;6144;4096;100;255
+LineMandelCalculator;4096;12288;8192;100;1497
+BatchMandelCalculator;2048;6144;4096;100;256
+RefMandelCalculator;512;1536;1024;1000;1042
+LineMandelCalculator;4096;12288;8192;100;1430
+RefMandelCalculator;512;1536;1024;1000;1042
+RefMandelCalculator;512;1536;1024;1000;1042
+BatchMandelCalculator;4096;12288;8192;100;1018
+LineMandelCalculator;512;1536;1024;1000;97
+BatchMandelCalculator;4096;12288;8192;100;1018
+LineMandelCalculator;512;1536;1024;1000;99
+BatchMandelCalculator;4096;12288;8192;100;1017
+RefMandelCalculator;1024;3072;2048;1000;4169
+LineMandelCalculator;512;1536;1024;1000;97
+RefMandelCalculator;1024;3072;2048;1000;4171
+RefMandelCalculator;1024;3072;2048;1000;4170
+BatchMandelCalculator;512;1536;1024;1000;121
+LineMandelCalculator;1024;3072;2048;1000;587
+BatchMandelCalculator;512;1536;1024;1000;122
+LineMandelCalculator;1024;3072;2048;1000;587
+RefMandelCalculator;2048;6144;4096;1000;16677
+BatchMandelCalculator;512;1536;1024;1000;122
+LineMandelCalculator;1024;3072;2048;1000;587
+RefMandelCalculator;2048;6144;4096;1000;16682
+RefMandelCalculator;2048;6144;4096;1000;16675
+BatchMandelCalculator;1024;3072;2048;1000;489
+LineMandelCalculator;2048;6144;4096;1000;2943
+LineMandelCalculator;2048;6144;4096;1000;2943
+RefMandelCalculator;4096;12288;8192;1000;66719
+BatchMandelCalculator;1024;3072;2048;1000;488
+BatchMandelCalculator;1024;3072;2048;1000;488
+LineMandelCalculator;2048;6144;4096;1000;2944
+RefMandelCalculator;4096;12288;8192;1000;66701
+RefMandelCalculator;4096;12288;8192;1000;66692
+BatchMandelCalculator;2048;6144;4096;1000;1954
+LineMandelCalculator;4096;12288;8192;1000;11626
+LineMandelCalculator;4096;12288;8192;1000;11630
+BatchMandelCalculator;2048;6144;4096;1000;1952
+LineMandelCalculator;4096;12288;8192;1000;11625
+BatchMandelCalculator;2048;6144;4096;1000;1953
+BatchMandelCalculator;4096;12288;8192;1000;7811
+BatchMandelCalculator;4096;12288;8192;1000;7821
+BatchMandelCalculator;4096;12288;8192;1000;7802
