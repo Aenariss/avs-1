@@ -8,27 +8,29 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <mm_malloc.h>
+
 
 #include <stdlib.h>
 
 
 #include "LineMandelCalculator.h"
-
+#define BLOCK_SIZE 64
 
 LineMandelCalculator::LineMandelCalculator (unsigned matrixBaseSize, unsigned limit) :
 	BaseMandelCalculator(matrixBaseSize, limit, "LineMandelCalculator")
 {	
-	data = (int *)(malloc(height * width * sizeof(int)));
-	reals_precounted = (float *)(malloc(width * sizeof(float)));
-	imags_precounted = (float *)(malloc(half * sizeof(float)));
-	reals = (float *)(malloc(width * sizeof(float)));
-	imags = (float *)(malloc(width * sizeof(float)));
+	data = (int *) _mm_malloc(height * width * sizeof(int), BLOCK_SIZE);
+	reals_precounted = (float *) _mm_malloc(width * sizeof(float), BLOCK_SIZE);
+	imags_precounted = (float *) _mm_malloc(half * sizeof(float), BLOCK_SIZE);
+	reals = (float *) _mm_malloc(width * sizeof(float), BLOCK_SIZE);
+	imags = (float *) _mm_malloc(width * sizeof(float), BLOCK_SIZE);
 
 	// init values
 	#pragma omp simd
 	for (int i = 0; i < width*height; i++)
 		data[i] = 0;
-
+	
 	// count only once here, negligent impact on performance but better to count in initialization imo
 	for (int i = 0; i < half; i++)
 		imags_precounted[i] = y_start + i * dy;
@@ -40,11 +42,11 @@ LineMandelCalculator::LineMandelCalculator (unsigned matrixBaseSize, unsigned li
 }
 
 LineMandelCalculator::~LineMandelCalculator() {
-	free(data);
-	free(reals);
-	free(imags);
-	free(reals_precounted);
-	free(imags_precounted);
+	_mm_free(data);
+	_mm_free(reals);
+	_mm_free(imags);
+	_mm_free(reals_precounted);
+	_mm_free(imags_precounted);
 	imags = NULL;
 	reals_precounted = NULL;
 	data = NULL;

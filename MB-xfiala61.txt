@@ -1,0 +1,38 @@
+#### Stručně odpovězte na následující otázky: ######
+
+1. Proč je nutné určovat, zda má výpočet pokračovat?
+==============================================================================
+Protože kdyby ke kontrole nedošlo, počítaly by se hodnoty zbytečně a pokud by 
+se tyto zbytečně vypočítané hodnoty i ukládaly, mohlo by to vést k nesprávným výsledkům.
+
+2. Byla "Line" vektorizace efektivní? Proč?
+==============================================================================
+Ne natolik efektivní jako batch, protože batch pracuje vždy s daty, která jsou zarovnána
+po 64, zatímco u line toto neplatí a zpracovává se vždy celý řádek najednou, zatímco batch 
+vždy zpracovává pouze konkrétní část, u které víme, že odpovídá. Obě implementace byly
+daleko efektivnější než referenční, protože lépe pracují s cache.
+
+3. Jaká byla dosažena výkonnost v Intel Advisoru pro jednotlivé implementace 
+(v GFLOPS)?
+==============================================================================
+Referenční implementace  - 0.592  GFLOPS
+Line implementace        - 26.634 GFLOPS
+Batch implementace       - 36.804 GFLOPS
+
+4. Jaká část kódu byla vektorizována v "Line" implementaci? Vyčteme tuto 
+informaci i u batch kalkulátoru?
+==============================================================================
+U Line implementace byly vektorizovány 2 smyčky - první smyčka zajišťovala naplnění
+pole hodnotami v rámci inicializace, druhá byla nejvnitřnější smyčkou ve výpočtu, kde
+docházelo k procházení řádků a počítání hodnot.
+U Batch implementace byly tyto 2 smyčky taktéž vektorizovány, s jediným rozdílem, že nejvnitřnější
+smyčka u batch implementace neprochází celý řádek najednou, ale prochází jej po menších blocích.
+
+5. Co vyčteme z Roofline modelu pro obě vektorizované implementace?
+==============================================================================
+U Line implementace dosáhla L1 aritmetická intenzita 0.249 FLOP/Byte a bandwidth byl mezi
+limity L2 a L3 paměťma.
+U Batch byla aritmetická intenzita opět 0.249 FLOP/Byte a bandwidth byl taktéž mezi limity
+L2 a L3 vyrovnávacích pamětí.
+
+

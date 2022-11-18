@@ -48,34 +48,34 @@ Calculator:        RefMandelCalculator
 Base size:         4096
 Matrix size:       12288x8192
 Iteration limit:   100
-Elapsed Time:      7552 ms
+Elapsed Time:      7510 ms
 ======================== Mandelbrot SIMD calculator ==========================
 Calculator:        RefMandelCalculator
 Base size:         4096
 Matrix size:       12288x8192
 Iteration limit:   100
-Elapsed Time:      26997 ms
+Elapsed Time:      26975 ms
 ======================== Mandelbrot SIMD calculator ==========================
 Calculator:        BatchMandelCalculator
 Base size:         4096
 Matrix size:       12288x8192
 Iteration limit:   100
-Elapsed Time:      1017 ms
+Elapsed Time:      845 ms
 ======================== Mandelbrot SIMD calculator ==========================
 Calculator:        BatchMandelCalculator
 Base size:         4096
 Matrix size:       12288x8192
 Iteration limit:   100
-Elapsed Time:      6970 ms
+Elapsed Time:      7086 ms
 ======================== Mandelbrot SIMD calculator ==========================
 Calculator:        LineMandelCalculator
 Base size:         4096
 Matrix size:       12288x8192
 Iteration limit:   100
-Elapsed Time:      1430 ms
+Elapsed Time:      1019 ms
 ======================== Mandelbrot SIMD calculator ==========================
 Calculator:        LineMandelCalculator
 Base size:         4096
 Matrix size:       12288x8192
 Iteration limit:   100
-Elapsed Time:      3393 ms
+Elapsed Time:      3677 ms

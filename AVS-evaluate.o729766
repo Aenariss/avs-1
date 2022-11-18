@@ -43,103 +43,103 @@ make[2]: Leaving directory '/home/xfiala61/avs/build_evaluate'
 [100%] Built target mandelbrot
 make[1]: Leaving directory '/home/xfiala61/avs/build_evaluate'
 /apps/all/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_progress_start /home/xfiala61/avs/build_evaluate/CMakeFiles 0
-2529490
-pids 2529490
-2529491
-pids 2529490 2529491
-2529493
-pids 2529490 2529491 2529493
-2529497
-pids 2529490 2529491 2529493 2529497
-2529498
-pids 2529490 2529491 2529493 2529497 2529498
-2529500
-pids 2529490 2529491 2529493 2529497 2529498 2529500
-2529504
-pids 2529490 2529491 2529493 2529497 2529498 2529500 2529504
-2529505
-pids 2529490 2529491 2529493 2529497 2529498 2529500 2529504 2529505
-2529507
-pids 2529490 2529491 2529493 2529497 2529498 2529500 2529504 2529505 2529507
-wait for 2529490
-wait for 2529491
-wait for 2529493
-wait for 2529497
-wait for 2529498
-wait for 2529500
-wait for 2529504
-wait for 2529505
-wait for 2529507
+1322977
+pids 1322977
+1322978
+pids 1322977 1322978
+1322980
+pids 1322977 1322978 1322980
+1322984
+pids 1322977 1322978 1322980 1322984
+1322985
+pids 1322977 1322978 1322980 1322984 1322985
+1322987
+pids 1322977 1322978 1322980 1322984 1322985 1322987
+1322991
+pids 1322977 1322978 1322980 1322984 1322985 1322987 1322991
+1322992
+pids 1322977 1322978 1322980 1322984 1322985 1322987 1322991 1322992
+1322994
+pids 1322977 1322978 1322980 1322984 1322985 1322987 1322991 1322992 1322994
+wait for 1322977
+wait for 1322978
+wait for 1322980
+wait for 1322984
+wait for 1322985
+wait for 1322987
+wait for 1322991
+wait for 1322992
+wait for 1322994
 CALCULATOR;BASE;WIDTH;HEIGHT;ITERS;TIME
-RefMandelCalculator;512;1536;1024;100;119
-RefMandelCalculator;512;1536;1024;100;119
-RefMandelCalculator;512;1536;1024;100;119
-LineMandelCalculator;512;1536;1024;100;13
-LineMandelCalculator;512;1536;1024;100;13
-LineMandelCalculator;512;1536;1024;100;13
-RefMandelCalculator;1024;3072;2048;100;476
-RefMandelCalculator;1024;3072;2048;100;477
-RefMandelCalculator;1024;3072;2048;100;477
-BatchMandelCalculator;512;1536;1024;100;16
-LineMandelCalculator;1024;3072;2048;100;77
-BatchMandelCalculator;512;1536;1024;100;16
-LineMandelCalculator;1024;3072;2048;100;76
-BatchMandelCalculator;512;1536;1024;100;16
-LineMandelCalculator;1024;3072;2048;100;85
-RefMandelCalculator;2048;6144;4096;100;1898
-RefMandelCalculator;2048;6144;4096;100;1899
-RefMandelCalculator;2048;6144;4096;100;1899
-BatchMandelCalculator;1024;3072;2048;100;64
-LineMandelCalculator;2048;6144;4096;100;363
-BatchMandelCalculator;1024;3072;2048;100;64
-LineMandelCalculator;2048;6144;4096;100;362
-BatchMandelCalculator;1024;3072;2048;100;64
-RefMandelCalculator;4096;12288;8192;100;7564
-LineMandelCalculator;2048;6144;4096;100;362
-RefMandelCalculator;4096;12288;8192;100;7570
-RefMandelCalculator;4096;12288;8192;100;7565
-BatchMandelCalculator;2048;6144;4096;100;255
-LineMandelCalculator;4096;12288;8192;100;1436
-BatchMandelCalculator;2048;6144;4096;100;255
-LineMandelCalculator;4096;12288;8192;100;1497
-BatchMandelCalculator;2048;6144;4096;100;256
-RefMandelCalculator;512;1536;1024;1000;1042
-LineMandelCalculator;4096;12288;8192;100;1430
-RefMandelCalculator;512;1536;1024;1000;1042
-RefMandelCalculator;512;1536;1024;1000;1042
-BatchMandelCalculator;4096;12288;8192;100;1018
-LineMandelCalculator;512;1536;1024;1000;97
-BatchMandelCalculator;4096;12288;8192;100;1018
-LineMandelCalculator;512;1536;1024;1000;99
-BatchMandelCalculator;4096;12288;8192;100;1017
-RefMandelCalculator;1024;3072;2048;1000;4169
-LineMandelCalculator;512;1536;1024;1000;97
-RefMandelCalculator;1024;3072;2048;1000;4171
-RefMandelCalculator;1024;3072;2048;1000;4170
-BatchMandelCalculator;512;1536;1024;1000;121
-LineMandelCalculator;1024;3072;2048;1000;587
-BatchMandelCalculator;512;1536;1024;1000;122
-LineMandelCalculator;1024;3072;2048;1000;587
-RefMandelCalculator;2048;6144;4096;1000;16677
-BatchMandelCalculator;512;1536;1024;1000;122
-LineMandelCalculator;1024;3072;2048;1000;587
-RefMandelCalculator;2048;6144;4096;1000;16682
-RefMandelCalculator;2048;6144;4096;1000;16675
-BatchMandelCalculator;1024;3072;2048;1000;489
-LineMandelCalculator;2048;6144;4096;1000;2943
-LineMandelCalculator;2048;6144;4096;1000;2943
-RefMandelCalculator;4096;12288;8192;1000;66719
-BatchMandelCalculator;1024;3072;2048;1000;488
-BatchMandelCalculator;1024;3072;2048;1000;488
-LineMandelCalculator;2048;6144;4096;1000;2944
-RefMandelCalculator;4096;12288;8192;1000;66701
-RefMandelCalculator;4096;12288;8192;1000;66692
-BatchMandelCalculator;2048;6144;4096;1000;1954
-LineMandelCalculator;4096;12288;8192;1000;11626
-LineMandelCalculator;4096;12288;8192;1000;11630
-BatchMandelCalculator;2048;6144;4096;1000;1952
-LineMandelCalculator;4096;12288;8192;1000;11625
-BatchMandelCalculator;2048;6144;4096;1000;1953
-BatchMandelCalculator;4096;12288;8192;1000;7811
-BatchMandelCalculator;4096;12288;8192;1000;7821
-BatchMandelCalculator;4096;12288;8192;1000;7802
+RefMandelCalculator;512;1536;1024;100;118
+RefMandelCalculator;512;1536;1024;100;118
+RefMandelCalculator;512;1536;1024;100;118
+LineMandelCalculator;512;1536;1024;100;12
+LineMandelCalculator;512;1536;1024;100;12
+LineMandelCalculator;512;1536;1024;100;12
+RefMandelCalculator;1024;3072;2048;100;474
+RefMandelCalculator;1024;3072;2048;100;474
+RefMandelCalculator;1024;3072;2048;100;474
+LineMandelCalculator;1024;3072;2048;100;59
+LineMandelCalculator;1024;3072;2048;100;59
+BatchMandelCalculator;512;1536;1024;100;13
+BatchMandelCalculator;512;1536;1024;100;13
+BatchMandelCalculator;512;1536;1024;100;13
+RefMandelCalculator;2048;6144;4096;100;1886
+LineMandelCalculator;1024;3072;2048;100;59
+RefMandelCalculator;2048;6144;4096;100;1885
+RefMandelCalculator;2048;6144;4096;100;1887
+LineMandelCalculator;2048;6144;4096;100;266
+LineMandelCalculator;2048;6144;4096;100;266
+BatchMandelCalculator;1024;3072;2048;100;53
+BatchMandelCalculator;1024;3072;2048;100;53
+BatchMandelCalculator;1024;3072;2048;100;53
+LineMandelCalculator;2048;6144;4096;100;265
+RefMandelCalculator;4096;12288;8192;100;7531
+RefMandelCalculator;4096;12288;8192;100;7531
+RefMandelCalculator;4096;12288;8192;100;7524
+LineMandelCalculator;4096;12288;8192;100;1023
+LineMandelCalculator;4096;12288;8192;100;1020
+BatchMandelCalculator;2048;6144;4096;100;212
+BatchMandelCalculator;2048;6144;4096;100;213
+BatchMandelCalculator;2048;6144;4096;100;212
+LineMandelCalculator;4096;12288;8192;100;1025
+RefMandelCalculator;512;1536;1024;1000;1041
+RefMandelCalculator;512;1536;1024;1000;1041
+RefMandelCalculator;512;1536;1024;1000;1041
+LineMandelCalculator;512;1536;1024;1000;85
+BatchMandelCalculator;4096;12288;8192;100;846
+LineMandelCalculator;512;1536;1024;1000;85
+BatchMandelCalculator;4096;12288;8192;100;845
+BatchMandelCalculator;4096;12288;8192;100;843
+LineMandelCalculator;512;1536;1024;1000;85
+RefMandelCalculator;1024;3072;2048;1000;4166
+RefMandelCalculator;1024;3072;2048;1000;4167
+RefMandelCalculator;1024;3072;2048;1000;4166
+LineMandelCalculator;1024;3072;2048;1000;428
+BatchMandelCalculator;512;1536;1024;1000;93
+LineMandelCalculator;1024;3072;2048;1000;427
+BatchMandelCalculator;512;1536;1024;1000;93
+BatchMandelCalculator;512;1536;1024;1000;93
+LineMandelCalculator;1024;3072;2048;1000;429
+RefMandelCalculator;2048;6144;4096;1000;16667
+RefMandelCalculator;2048;6144;4096;1000;16666
+RefMandelCalculator;2048;6144;4096;1000;16672
+LineMandelCalculator;2048;6144;4096;1000;2013
+BatchMandelCalculator;1024;3072;2048;1000;381
+LineMandelCalculator;2048;6144;4096;1000;2015
+BatchMandelCalculator;1024;3072;2048;1000;382
+BatchMandelCalculator;1024;3072;2048;1000;381
+LineMandelCalculator;2048;6144;4096;1000;2012
+RefMandelCalculator;4096;12288;8192;1000;66669
+RefMandelCalculator;4096;12288;8192;1000;66647
+RefMandelCalculator;4096;12288;8192;1000;66652
+LineMandelCalculator;4096;12288;8192;1000;7678
+BatchMandelCalculator;2048;6144;4096;1000;1517
+LineMandelCalculator;4096;12288;8192;1000;7685
+BatchMandelCalculator;2048;6144;4096;1000;1515
+BatchMandelCalculator;2048;6144;4096;1000;1516
+LineMandelCalculator;4096;12288;8192;1000;7677
+BatchMandelCalculator;4096;12288;8192;1000;6052
+BatchMandelCalculator;4096;12288;8192;1000;6045
+BatchMandelCalculator;4096;12288;8192;1000;6062
