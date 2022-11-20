@@ -2,22 +2,22 @@
 
 1. Proč je nutné určovat, zda má výpočet pokračovat?
 ==============================================================================
-Protože kdyby ke kontrole nedošlo, počítaly by se hodnoty zbytečně a pokud by 
+Protože kdyby ke kontrole nedošlo, počítaly by se hodnoty zbytečně (směřovali by k nekonečnu) a pokud by 
 se tyto zbytečně vypočítané hodnoty i ukládaly, mohlo by to vést k nesprávným výsledkům.
 
 2. Byla "Line" vektorizace efektivní? Proč?
 ==============================================================================
-Ne natolik efektivní jako batch, protože batch pracuje vždy s daty, která jsou zarovnána
-po 64, zatímco u line toto neplatí a zpracovává se vždy celý řádek najednou, zatímco batch 
-vždy zpracovává pouze konkrétní část, u které víme, že odpovídá. Obě implementace byly
-daleko efektivnější než referenční, protože lépe pracují s cache.
+Ne natolik efektivní jako batch, protože batch pracuje vždy s daty, která jsou zarovnána a 
+počítána po 64 (velikost bloku), zatímco u line toto neplatí a zpracovává se vždy celý řádek 
+najednou. Tím pádem dokáže batch cache plnit efektivněji než line. Oproti referenčnímu řešení 
+byly obě implementace daleko výkonnější právě díky lepší práci s cache paměťí.
 
 3. Jaká byla dosažena výkonnost v Intel Advisoru pro jednotlivé implementace 
 (v GFLOPS)?
 ==============================================================================
-Referenční implementace  - 0.592  GFLOPS
-Line implementace        - 26.634 GFLOPS
-Batch implementace       - 36.804 GFLOPS
+Referenční implementace  - 2.22  GFLOPS
+Line implementace        - 16.82 GFLOPS
+Batch implementace       - 19.64 GFLOPS
 
 4. Jaká část kódu byla vektorizována v "Line" implementaci? Vyčteme tuto 
 informaci i u batch kalkulátoru?
@@ -30,9 +30,9 @@ smyčka u batch implementace neprochází celý řádek najednou, ale prochází
 
 5. Co vyčteme z Roofline modelu pro obě vektorizované implementace?
 ==============================================================================
-U Line implementace dosáhla L1 aritmetická intenzita 0.249 FLOP/Byte a bandwidth byl mezi
-limity L2 a L3 paměťma.
-U Batch byla aritmetická intenzita opět 0.249 FLOP/Byte a bandwidth byl taktéž mezi limity
-L2 a L3 vyrovnávacích pamětí.
+U Line implementace dosáhla L1 aritmetická intenzita v hlavní smyčce 0.249 FLOP/Byte a bandwidth byl mezi
+limity L2 a L3 pamětí. Výkon ve vektorizované smyčce byl 26.634 GFLOPS.
+U Batch byla aritmetická intenzita ve smyčce opět 0.249 FLOP/Byte a bandwidth byl taktéž mezi limity
+L2 a L3 vyrovnávacích pamětí. Výkon ve vektorizované smyčce byl 36.804 GFLOPS.
 
 
